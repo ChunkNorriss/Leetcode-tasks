@@ -61,13 +61,3 @@ public class UndergroundSystem {
         public int SignIn {get;set;}
     }
 }
-
-
-
-/**
- * Your UndergroundSystem object will be instantiated and called as such:
- * UndergroundSystem obj = new UndergroundSystem();
- * obj.CheckIn(id,stationName,t);
- * obj.CheckOut(id,stationName,t);
- * double param_3 = obj.GetAverageTime(startStation,endStation);
- */

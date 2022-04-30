@@ -195,4 +195,30 @@ public class Solution31Tests
         var tinyUrl = codec.encode(longUrl);
         var decode = codec.decode(tinyUrl);
     }
+
+    [Test]
+    public void MinCostConnectPointsSolutionTest()
+    {
+        
+        // var points = new[]
+        // {
+        //     new[] { 0, 0 },
+        //     new[] { 2, 2 }, 
+        //     new[] { 3, 10 },
+        //     new[] { 5, 2 },
+        //     new[] { 7, 0 },
+        // };
+        var points = new[]
+        {
+            new[] { 2,-3 },
+            new[] { -17,-8 }, 
+            new[] { 13,8 },
+            new[] { -17,-15},
+        };
+        var expected = 53;
+        var costConnectPointsSolution = new MinCostConnectPointsSolution();
+        var actual = costConnectPointsSolution.MinCostConnectPoints(points);
+        
+        Assert.AreEqual(expected, actual);
+    }
 }
