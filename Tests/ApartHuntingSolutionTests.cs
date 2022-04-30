@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
-using Solutions.AlgoExp;
+using Solutions.AlgoExpert;
 
 namespace Tests;
 
@@ -22,7 +22,71 @@ public class ApartHuntingSolutionTests
             },
             new()
             {
+                { "gym", false },
+                { "office", false },
+                { "pool", false },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", true },
+                { "pool", false },
+                { "school", true },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", true },
+                { "pool", false },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", false },
+                { "pool", false },
+                { "school", false },
+                { "store", true }
+            },
+            new()
+            {
                 { "gym", true },
+                { "office", true },
+                { "pool", false },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", false },
+                { "pool", true },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", false },
+                { "pool", false },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
+                { "office", false },
+                { "pool", false },
+                { "school", false },
+                { "store", false }
+            },
+            new()
+            {
+                { "gym", false },
                 { "office", false },
                 { "pool", false },
                 { "school", true },
@@ -30,39 +94,15 @@ public class ApartHuntingSolutionTests
             },
             new()
             {
-                { "gym", true },
+                { "gym", false },
                 { "office", false },
-                { "pool", false },
-                { "school", true },
-                { "store", false }
-            },
-            new()
-            {
-                { "gym", true },
-                { "office", false },
-                { "pool", false },
-                { "school", true },
-                { "store", false }
-            },
-            new()
-            {
-                { "gym", true },
-                { "office", false },
-                { "pool", false },
-                { "school", true },
-                { "store", false }
-            },
-            new()
-            {
-                { "gym", true },
-                { "office", false },
-                { "pool", false },
-                { "school", true },
+                { "pool", true },
+                { "school", false },
                 { "store", false }
             }
         };
-        var reqs = new[] { "gym", "school", "store" };
-        var expected = 3;
+        var reqs = new[] { "gym", "pool", "school", "store" };
+        var expected = 4;
 
         var idx = ApartHuntingSolution.ApartmentHunting(blocks, reqs);
         Assert.AreEqual(expected, idx);

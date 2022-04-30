@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Solutions.AlgoExp;
+namespace Solutions.AlgoExpert;
 
 public class ApartHuntingSolution
 {
@@ -46,7 +46,9 @@ public class ApartHuntingSolution
                 var block = blocks[i];
                 if (block[req])
                 {
-                    for (var j = distance; j > 0; j--) 
+                    //if it's not the first one occurrence than the longest distance between building will be at the middle
+                    var offset = i - distance > 0 ? distance / 2 : distance;
+                    for (var j = offset; j > 0; j--) 
                         buildingInfos[i - j].Distances[req] = j;
                     distance = 0;
                 }
