@@ -3,5 +3,7 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::111EEB05-0667-4655-86EA-4C0BDC1069C0::net6.0::Tests.ApartHuntingSolutionTests.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::111EEB05-0667-4655-86EA-4C0BDC1069C0::net6.0::Tests.EvaluateDivision399Tests.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::111EEB05-0667-4655-86EA-4C0BDC1069C0::net6.0::Tests.Solution17Tests.Tests("23",["ad", "ae", "af", "bd", "be", ...])&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::111EEB05-0667-4655-86EA-4C0BDC1069C0::net6.0::Tests.Solution17Tests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
