@@ -4,8 +4,8 @@ namespace Solutions;
 
 public class Codec
 {
-    private readonly Hashtable hashToUrl = new();
     private const string BaseUrl = "http://tinyurl.com/";
+    private readonly Hashtable hashToUrl = new();
 
     // Encodes a URL to a shortened URL
     public string encode(string longUrl)
